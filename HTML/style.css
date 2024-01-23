@@ -1,0 +1,22 @@
+body {
+    margin: unset;
+}
+
+.navbar {
+    background-color: #908e8e;
+    color: #ffffff;
+}
+
+.navbar ul {
+    margin: unset;
+    list-style: none;
+    padding: unset;
+    display: flex;
+}
+
+.navbar a {
+    color: inherit;
+    text-decoration: none;
+    padding: 1em;
+    display:inline-block
+}
