@@ -20,3 +20,11 @@ body {
     padding: 1em;
     display:inline-block
 }
+
+.navbar a.home{
+    background-color: #d176a4;
+}
+
+.navbar a:hover{
+    background-color: rgb(37, 106, 83);
+}
