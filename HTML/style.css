@@ -5,6 +5,7 @@ body {
 .navbar {
     background-color: #908e8e;
     color: #ffffff;
+    position: relative;
 }
 
 .navbar ul {
@@ -14,11 +15,15 @@ body {
     display: flex;
 }
 
+.navbar .nav-toggle{
+    display: flex;
+}
+
 .navbar a {
     color: inherit;
     text-decoration: none;
     padding: 1em;
-    display:inline-block
+    display:inline-block;
 }
 
 .navbar a.home{
@@ -26,5 +31,37 @@ body {
 }
 
 .navbar a:hover{
-    background-color: rgb(37, 106, 83);
+    background-color: #488162;
+}
+
+.navbar .hamburger {
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: unset;
+    background: none;
+    cursor: pointer;
+    display: none;
+}
+
+@media screen and (max-width: 650px){
+    .navbar .hamburger{
+        display: block;
+    }
+    
+    .navbar.open ul{
+        display: block;
+    }
+
+    .navbar.open .nav-toggle{
+        display: block;
+    }
+
+    .navbar.open a{
+        display: block;
+    }
+    
+    .navbar .nav-toggle{
+        display: none;
+    }
 }
