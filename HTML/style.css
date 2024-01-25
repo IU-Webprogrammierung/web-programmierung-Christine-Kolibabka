@@ -20,7 +20,7 @@ h3 {
     height: 100%;
     width: 100%;
     z-index: -1;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
 }
@@ -80,6 +80,14 @@ h3 {
     display: block;
 }
 
+.arrow-up {
+    position: fixed;
+    border: unset;
+    background: none;
+    cursor: pointer;
+    bottom: 10px;
+    right: 10px;
+}
 
 @media screen and (min-width: 500px){
     .navbar .hamburger{
