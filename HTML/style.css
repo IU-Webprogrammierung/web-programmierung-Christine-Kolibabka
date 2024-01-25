@@ -4,6 +4,18 @@ body {
     font-family: "Source Sans Pro", sans-serif;
 }
 
+h1 {
+    font-size: 39.06px;
+    font-family: "Short Stack", cursive;
+    text-transform: uppercase;
+}
+
+h3 {
+    font-size: 25px;
+    font-weight: lighter;
+    font-style: italic;
+}
+
 .background-home{
     height: 100%;
     width: 100%;
