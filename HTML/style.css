@@ -1,11 +1,22 @@
 body {
+    height: 100%;
     margin: unset;
 }
 
+.background-home{
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
 .navbar {
-    background-color: #908e8e;
-    color: #ffffff;
+    background-color: transparent;
+    color: #373333;
     position: relative;
+    z-index: 1;
 }
 
 .navbar ul {
@@ -27,7 +38,7 @@ body {
 }
 
 .navbar a.home{
-    background-color: #d176a4;
+    background-color: transparent;
 }
 
 .navbar a:hover{
