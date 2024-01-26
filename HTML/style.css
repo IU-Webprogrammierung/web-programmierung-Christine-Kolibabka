@@ -1,5 +1,6 @@
 body {
     height: 100%;
+    width: 100%;
     margin: unset;
     font-family: "Source Sans Pro", sans-serif;
 }
@@ -80,14 +81,19 @@ h3 {
     display: block;
 }
 
-.arrow-up {
-    position: fixed;
+.icons {
     border: unset;
     background: none;
     cursor: pointer;
-    bottom: 10px;
-    right: 10px;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
 }
+
+#arrow-up {
+    margin-right: 10px;
+}
+
 
 @media screen and (min-width: 500px){
     .navbar .hamburger{
