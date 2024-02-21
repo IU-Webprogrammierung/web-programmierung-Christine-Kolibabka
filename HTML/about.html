@@ -7,74 +7,85 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav id="navbar" class="navbar">
-        <ul>
-            <li>
-                <a href="index.html" class="home">Home</a>
-            </li>
-            <div class="nav-toggle">
-            <li>
-                <a href="work.html">Work</a>
-            </li>
-            <li>
-                <a href="about.html">About</a>
-            </li>
-            <li>
-                <a href="contact.html">Contact</a>
-            </li>
-            </div>
-        </ul>
-        <button id="hamburger-toggle" class="hamburger">
+    <div class="gridcontainer">
+
+        <!-- Navigation -->
+        <nav id="navbar" class="navbar">
+            <ul>
+                <li>
+                    <a href="index.html" class="home">Home</a>
+                </li>
+                <div class="nav-toggle">
+                <li>
+                    <a href="work.html">Work</a>
+                </li>
+                <li>
+                    <a href="about.html">About</a>
+                </li>
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
+                </div>
+            </ul>
+            <button id="hamburger-toggle" class="hamburger">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000" viewBox="0 0 256 256">
+                    <path d="M228,128a12,12,0,0,1-12,12H40a12,12,0,0,1,0-24H216A12,12,0,0,1,228,128ZM40,76H216a12,12,0,0,0,0-24H40a12,12,0,0,0,0,24ZM216,180H40a12,12,0,0,0,0,24H216a12,12,0,0,0,0-24Z">
+                    </path>
+                </svg>
+            </button>
+        </nav>
+
+        <!-- Seiteninhalt -->
+        <h3>About the artist</h3>
+        <img src="" alt="Picture of the artist">
+        <p>Born in 2018, the five-year-old prodigy has been captivating connoisseurs of contemporary art all over the globe ever since he first gripped a crayon in his chubby hands.</p>
+        <p>His whimsical explorations of color theory redefine the limits of possibility–and his depictions of war and peace strive to answer questions about the very essence of being human.</p>
+        <p>While the world holds its breath, awaiting yet another testament of his budding genius, he calmly focuses on improving his technique.</p>
+        <p>In his spare time, he likes to build Lego spacecraft and to think about the advent and fall of the Roman Empire.</p>
+       
+        <!-- Social Media -->
+        <button id="instagram" class="icons">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000" viewBox="0 0 256 256"><path d="M128,80a48,48,0,1,0,48,48A48.05,48.05,0,0,0,128,80Zm0,72a24,24,0,1,1,24-24A24,24,0,0,1,128,152ZM176,20H80A60.07,60.07,0,0,0,20,80v96a60.07,60.07,0,0,0,60,60h96a60.07,60.07,0,0,0,60-60V80A60.07,60.07,0,0,0,176,20Zm36,156a36,36,0,0,1-36,36H80a36,36,0,0,1-36-36V80A36,36,0,0,1,80,44h96a36,36,0,0,1,36,36ZM196,76a16,16,0,1,1-16-16A16,16,0,0,1,196,76Z">
+            </path>
+            </svg>
+        </button>
+        <button id="facebook" class="icons">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000" viewBox="0 0 256 256"><path d="M128,20A108,108,0,1,0,236,128,108.12,108.12,0,0,0,128,20Zm12,191.13V156h20a12,12,0,0,0,0-24H140V112a12,12,0,0,1,12-12h16a12,12,0,0,0,0-24H152a36,36,0,0,0-36,36v20H96a12,12,0,0,0,0,24h20v55.13a84,84,0,1,1,24,0Z">
+            </path>
+        </svg>
+        </button>
+        <button id="arrow-up" class="icons">
             <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000" viewBox="0 0 256 256">
-                <path d="M228,128a12,12,0,0,1-12,12H40a12,12,0,0,1,0-24H216A12,12,0,0,1,228,128ZM40,76H216a12,12,0,0,0,0-24H40a12,12,0,0,0,0,24ZM216,180H40a12,12,0,0,0,0,24H216a12,12,0,0,0,0-24Z">
+                <path d="M208.49,120.49a12,12,0,0,1-17,0L140,69V216a12,12,0,0,1-24,0V69L64.49,120.49a12,12,0,0,1-17-17l72-72a12,12,0,0,1,17,0l72,72A12,12,0,0,1,208.49,120.49Z">
                 </path>
             </svg>
         </button>
-    </nav>
-    <h3>About the artist</h3>
-    <img src="" alt="Picture of the artist">
-    <p>Born in 2018, the five-year-old prodigy has been captivating connoisseurs of contemporary art all over the globe ever since he first gripped a crayon in his chubby hands.</p>
-    <p>His whimsical explorations of color theory redefine the limits of possibility–and his depictions of war and peace strive to answer questions about the very essence of being human.</p>
-    <p>While the world holds its breath, awaiting yet another testament of his budding genius, he calmly focuses on improving his technique.</p>
-    <p>In his spare time, he likes to build Lego spacecraft and to think about the advent and fall of the Roman Empire.</p>
-    <button id="instagram" class="icons">
-        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000" viewBox="0 0 256 256"><path d="M128,80a48,48,0,1,0,48,48A48.05,48.05,0,0,0,128,80Zm0,72a24,24,0,1,1,24-24A24,24,0,0,1,128,152ZM176,20H80A60.07,60.07,0,0,0,20,80v96a60.07,60.07,0,0,0,60,60h96a60.07,60.07,0,0,0,60-60V80A60.07,60.07,0,0,0,176,20Zm36,156a36,36,0,0,1-36,36H80a36,36,0,0,1-36-36V80A36,36,0,0,1,80,44h96a36,36,0,0,1,36,36ZM196,76a16,16,0,1,1-16-16A16,16,0,0,1,196,76Z">
-        </path>
-        </svg>
-    </button>
-    <button id="facebook" class="icons">
-        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000" viewBox="0 0 256 256"><path d="M128,20A108,108,0,1,0,236,128,108.12,108.12,0,0,0,128,20Zm12,191.13V156h20a12,12,0,0,0,0-24H140V112a12,12,0,0,1,12-12h16a12,12,0,0,0,0-24H152a36,36,0,0,0-36,36v20H96a12,12,0,0,0,0,24h20v55.13a84,84,0,1,1,24,0Z">
-        </path>
-    </svg>
-    </button>
-    <button id="arrow-up" class="icons">
-        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000" viewBox="0 0 256 256">
-            <path d="M208.49,120.49a12,12,0,0,1-17,0L140,69V216a12,12,0,0,1-24,0V69L64.49,120.49a12,12,0,0,1-17-17l72-72a12,12,0,0,1,17,0l72,72A12,12,0,0,1,208.49,120.49Z">
-            </path>
-        </svg>
-    </button>
-    <footer>
-        <p>Subscribe to the newsletter and keep in touch!</p>
-        <ul id="Sitemap">
-            <li>
-                <a href="index.html" class="home">Home</a>
-            </li>
-            <li>
-                <a href="work.html">Work</a>
-            </li>
-            <li>
-                <a href="about.html">About</a>
-            </li>
-            <li>
-                <a href="contact.html">Contact</a>
-            </li>
-        </ul>
-        <form>
-            <input type="email" id="newslettermail" name="newslettermail" placeholder="Your e-mail"><br>
-            <input type="submit" value="Subscribe"><br>
-        </form><br>
-        <p>Lorem Ipsum 2024©</p>
-    </footer>
-    <script src="script.js"></script>
+
+        <!-- Footer -->
+        <footer>
+            <p>Subscribe to the newsletter and keep in touch!</p>
+            <ul id="Sitemap">
+                <li>
+                    <a href="index.html" class="home">Home</a>
+                </li>
+                <li>
+                    <a href="work.html">Work</a>
+                </li>
+                <li>
+                    <a href="about.html">About</a>
+                </li>
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
+            </ul>
+            <form>
+                <input type="email" id="newslettermail" name="newslettermail" placeholder="Your e-mail"><br>
+                <input type="submit" value="Subscribe"><br>
+            </form><br>
+            <p>Lorem Ipsum 2024©</p>
+        </footer>
+    </div>
+        <script src="script.js"></script>
+
 </body>
 </html>
