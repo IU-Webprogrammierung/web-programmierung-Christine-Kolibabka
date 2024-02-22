@@ -3,43 +3,24 @@ body {
     width: 100%;
     margin: 0;
     padding: 0;
+    padding-right: 10px;
     font-family: "Source Sans Pro", sans-serif;
 }
 
 .gridcontainer {
     display: grid;
     grid-template-rows: auto;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(4, 1fr) ;
     grid-column-gap: 20px;
-    margin: 0 20px;
   }
 
-h1 {
-    font-size: 39.06px;
-    font-family: "Short Stack", cursive;
-    text-transform: uppercase;
-}
-
-h3 {
-    font-size: 25px;
-    font-weight: lighter;
-    font-style: italic;
-}
-
-.background-home{
-    height: 100%;
-    width: 100%;
-    z-index: -1;
-    position: fixed;
-    top: 0;
-    left: 0;
-}
-
+  /* Navigation */
 .navbar {
     background-color: transparent;
     color: #373333;
-    position: relative;
+    max-width:100%;
     z-index: 1;
+    grid-column: 1 / span 4;
 }
 
 .navbar ul {
@@ -47,6 +28,7 @@ h3 {
     list-style: none;
     padding: unset;
     display: block;
+    width: 100%;
 }
 
 .navbar .nav-toggle{
@@ -89,6 +71,41 @@ h3 {
 .navbar.open a{
     display: block;
 }
+
+/* work.html */
+.series {
+grid-column: 1 / span 4;
+margin: 10px;
+}
+
+.series img {
+    max-width: 100%;
+    height: auto;
+  }
+
+/* Typografie */
+h1 {
+    font-size: 39.06px;
+    font-family: "Short Stack", cursive;
+    text-transform: uppercase;
+}
+
+h3 {
+    font-size: 25px;
+    font-weight: lighter;
+    font-style: italic;
+}
+
+.background-home{
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+
 
 .icons {
     border: unset;
