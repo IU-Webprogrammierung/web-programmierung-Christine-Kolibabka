@@ -83,6 +83,24 @@ margin: 10px;
     height: auto;
   }
 
+/* index.html */
+.gridcontainer-index {
+    display: grid;
+    grid-template-rows: 100%;
+    grid-template-columns: repeat(4, 1fr) ;
+    grid-column-gap: 20px;
+  }
+
+.content {
+    grid-column: 1 /span 4;
+    margin: 0px;
+}
+.content img {
+    max-height: 100vh;
+    width: auto;
+
+}
+
 /* Typografie */
 h1 {
     font-size: 39.06px;
