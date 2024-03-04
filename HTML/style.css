@@ -6,13 +6,6 @@ body {
     padding-right: 10px;
 }
 
-.gridcontainer {
-    display: grid;
-    grid-template-rows: auto;
-    grid-template-columns: repeat(4, 1fr) ;
-    grid-column-gap: 20px;
-  }
-
   /* Typografie */
 body {
     color: black;
@@ -57,10 +50,27 @@ small{
     line-height: 125%;
 }
 
-/* Header */
-  header {
-    grid-column: 1 / span 4;
+.gridcontainer {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: repeat(4, 1fr) ;
+    grid-column-gap: 20px;
   }
+
+header {
+    grid-column-start: 1;
+    grid-column-end: span col4-end;
+  }
+
+main {
+    grid-column-start: 1;
+    grid-column-end: span col4-end;
+}
+
+footer {
+    grid-column-start: 1;
+    grid-column-end: span col4-end;
+}
 
 /* Navigation */
 .navbar {
@@ -122,9 +132,7 @@ small{
 
 /* Footer */
 footer {
-    background-color: #488162;
-    max-width: 100%;
-    grid-column: 1 / span 4;
+    background-color: #898b8a;
 }
 
 #Sitemap {
@@ -151,19 +159,23 @@ footer {
     background: none;
     cursor: pointer;
     flex-shrink: 0;
-    width: 60px;
-    height: 60px;
+    width: 48px;
+    height: 48px;
 }
 
 /* Back to top */
-#arrow-up {
-    margin-right: 10px;
-    position: fixed;
-
+.back {
+    grid-column-start: 4;
+    justify-self: end;
 }
 
-.index #arrow-up {
-    display: none;
+#arrow-up {
+    border: unset;
+    background: none;
+    cursor: pointer;
+    flex-shrink: 0;
+    width: 48px;
+    height: 48px;
 }
 
 /* index.html */
