@@ -181,18 +181,22 @@ footer {
 /* index.html */
 .gridcontainer-index {
     display: grid;
-    grid-template-rows: 100%;
+    grid-template-rows: minmax(0, 1fr);
     grid-template-columns: repeat(4, 1fr) ;
     grid-column-gap: 20px;
   }
 
 .hero{
-    height: 100%;
-    width: 100%;
+    
+}
+
+.index{
+    background-image: url("Images/hero-169.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
     z-index: -1;
-    position: fixed;
-    top: 0;
-    left: 0;
 }
 
 /* work.html */
