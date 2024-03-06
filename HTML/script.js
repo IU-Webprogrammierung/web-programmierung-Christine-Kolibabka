@@ -1,9 +1,20 @@
 const hamburgerToggle = document.querySelector("#hamburger-toggle");
-const navbar = document.querySelector("#navbar");
 const arrowUp = document.querySelector("#arrow-up");
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+window.onscroll = function() {stickybar()};
 
 hamburgerToggle.addEventListener("click", onHamburgerClick);
 arrowUp.addEventListener("click", onArrowClick);
+
+function stickybar() {
+    if (window.pageYOffset >= sticky) {
+      navbar.classList.add("sticky")
+    } else {
+      navbar.classList.remove("sticky");
+    }
+  }
 
 function onHamburgerClick(){
     if (!navbar.classList.contains("open")){
