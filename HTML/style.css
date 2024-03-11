@@ -144,55 +144,6 @@ footer {
     display: block;
 }
 
-
-/* Footer */
-footer {
-    background-color: #898b8a;
-}
-
-#Sitemap {
-    display: none;
-}
-
-/* Social Media */
-.flex-container {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 20px;
-    position: fixed;
-    bottom: 10px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 100%; 
-    background-color: transparent; 
-    padding: 10px; 
-}
-
-.icons {
-    border: unset;
-    background: none;
-    cursor: pointer;
-    flex-shrink: 0;
-    width: 48px;
-    height: 48px;
-}
-
-/* Back to top */
-.back {
-    grid-column-start: 4;
-    justify-self: end;
-}
-
-#arrow-up {
-    border: unset;
-    background: none;
-    cursor: pointer;
-    flex-shrink: 0;
-    width: 48px;
-    height: 48px;
-}
-
 /* index.html */
 .index{
     background-image: url("Images/hero-169.jpg");
@@ -301,21 +252,67 @@ grid-template-columns: repeat(4, 1fr);
         row-gap: 10px;
     }
 
-    .warriors h2{
-        grid-column: 1 /span 4;
-        grid-row: 1;
-        justify-self: center;   
-    }
+        .warriors h2{
+            grid-column: 1 /span 4;
+            grid-row: 1;
+            justify-self: center;   
+        }
 
-    .warriors img{
-        grid-column: 1 /span 4;
-    }
+        .warriors img{
+            grid-column: 1 /span 4;
+        }
 
-    .warriors h3{
-        grid-column: 1 /span 4;
-        align-self: start;
-        justify-self: left;
-    }
+        .warriors h3{
+            grid-column: 1 /span 4;
+            align-self: start;
+            justify-self: left;
+        }
+
+/* Social Media */
+.socialmedia{
+    grid-column: 1 / span 4;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.socialmedia button:nth-child(1){
+    justify-self: right;
+}
+.icons {
+    border: unset;
+    background: none;
+    cursor: pointer;
+    flex-shrink: 0;
+    width: 48px;
+    height: 48px;
+}
+
+/* Back to top */
+.back {
+    grid-column-start: 4;
+    justify-self: end;
+    position:fixed;
+    bottom: 10px;
+}
+
+#arrow-up {
+    border: unset;
+    background: none;
+    cursor: pointer;
+    flex-shrink: 0;
+    width: 48px;
+    height: 48px;
+}
+
+/* Footer */
+footer {
+    background-color: #898b8a;
+}
+
+#Sitemap {
+    display: none;
+}
 
 /* @media screen and (min-width: 500px){
 .gridcontainer{
