@@ -1,47 +1,31 @@
+//Deklarationen
 const hamburgerToggle = document.querySelector("#hamburger-toggle");
-const arrowUp = document.querySelector("#arrow-up");
-var navbar = document.getElementById("navbar");
-var sticky = navbar.offsetTop;
+const overlay = document.querySelector("#overlay");
+const closeToggle = document.querySelector("#close");
 var i = 0;
 var txt = "Turning blobs into: Oh, thats cool!"; 
 var speed = 50;
 
-window.onscroll = function() {stickybar()};
+//Event Listener
 window.onload = function() {
-    typeWriter(); 
-  };
-
-hamburgerToggle.addEventListener("click", onHamburgerClick);
-arrowUp.addEventListener("click", onArrowClick);
-
-function stickybar() {
-    if (window.pageYOffset >= sticky) {
-      navbar.classList.add("sticky")
-    } else {
-      navbar.classList.remove("sticky");
-    }
-  }
-
-function onHamburgerClick(){
-    if (!navbar.classList.contains("open")){
-        navbar.classList.add("open");
-    }
-    else {
-        navbar.classList.remove("open");
-    }
+  typeWriter(); 
 };
+hamburgerToggle.addEventListener("click", openNav);
+closeToggle.addEventListener("click", closeNav)
 
-function onArrowClick(){
-    window.scrollTo({
-        top:0,
-        behavior:"smooth"
-    });
-};
-
+//Funktionen
 function typeWriter() {
   if (i < txt.length) {
     document.getElementById("answer").innerHTML += txt.charAt(i);
     i++;
     setTimeout(typeWriter, speed);
   }
+}
+
+function openNav() {
+  document.getElementById("overlay").style.display = "flex";
+}
+
+function closeNav() {
+  document.getElementById("overlay").style.display = "none";
 }
