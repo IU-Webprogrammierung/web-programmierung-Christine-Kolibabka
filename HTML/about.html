@@ -3,42 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About</title>
+    <title>Home</title>
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/9937edf741.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source Sans Pro">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Short Stack">
 </head>
-<body>
-    <div class="gridcontainer">
-        
-        <nav id="navbar" class="navbar">
+<body id="about">
+    <div class="main-grid">
+        <header class="nav">
             <a href="index.html" id="logo"><img src="Images\Logo.png" alt="Logo"></a>
-            <ul>
-                <li class="nav-toggle">
-                    <a href="index.html">Home</a>
-                </li>
-                <li class="nav-toggle">
-                        <a href="work.html">Work</a>
-                </li>
-                <li class="nav-toggle">
-                        <a href="about.html">About</a>
-                </li>
-                <li class="nav-toggle">
-                        <a href="contact.html">Contact</a>
-                </li>
-            </ul>
-            <button id="hamburger-toggle" class="hamburger">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="#000000" viewBox="0 0 256 256">
-                    <path d="M228,128a12,12,0,0,1-12,12H40a12,12,0,0,1,0-24H216A12,12,0,0,1,228,128ZM40,76H216a12,12,0,0,0,0-24H40a12,12,0,0,0,0,24ZM216,180H40a12,12,0,0,0,0,24H216a12,12,0,0,0,0-24Z">
-                    </path>
-                </svg>
-            </button>
-        </nav>
+            <button id="hamburger-toggle">
+                <i class="fa-solid fa-bars"></i>
+            </button>    
+        </header>
         <main>
-            <!-- Seiteninhalt -->
             <h3>About the artist</h3>
-            <img src="" alt="Picture of the artist">
+            <img src="Images\portrait.jpg" alt="Picture of the artist" id="portrait">
             <p>Born in 2018, the five-year-old prodigy has been captivating connoisseurs of contemporary art all over the globe ever since he first gripped a crayon in his chubby hands.</p>
             <p>His whimsical explorations of color theory redefine the limits of possibility–and his depictions of war and peace strive to answer questions about the very essence of being human.</p>
             <p>While the world holds its breath, awaiting yet another testament of his budding genius, he calmly focuses on improving his technique.</p>
@@ -83,7 +65,17 @@
             <p>Lorem Ipsum 2024©</p>
         </footer>
     </div>
+    <div class="curtain-menu" id="overlay">
+        <button id="close">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+        <div class="overlay-content">
+            <a href="index.html">Home</a>
+            <a href="work.html">Portfolio</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </div>
     <script src="script.js"></script>
-
 </body>
 </html>
