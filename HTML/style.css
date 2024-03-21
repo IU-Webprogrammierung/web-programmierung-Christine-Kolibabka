@@ -147,6 +147,7 @@ small{
     font-size: 0.8rem;
     flex-direction: row;
     flex-wrap: wrap;
+    margin-top: auto;
 }
 
 #newsletter{
@@ -249,4 +250,57 @@ input[type=text]{
 
 #portrait{
     width: 100%;
+}
+
+/* contact.html*/
+#contact{
+    margin: 0;
+    background-color: #E9511F;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: flex-start;
+}
+
+#contact main{
+    align-self: start;
+    justify-self: start;
+}
+
+input[type=email]{
+    width: 100%;
+    margin-bottom: 0.25em;
+    border-radius: 0.5rem;
+    box-sizing: border-box;
+    border: 1px solid #FDFDFF;
+    padding-top: 0.25em;
+}
+
+#contact-form input[type=submit]{
+    width: 33%;
+    border:none;
+    background-color: #174463;
+    border-radius: 0.5rem;
+    box-sizing: border-box;
+    padding-top: 0.25em;
+    padding-bottom: 0.25em;
+    color: #FDFDFF; 
+    margin-bottom: 8rem;
+}
+
+#contact-form label{
+    margin-bottom: 0.25rem;
+}
+
+#contact-form input{
+    margin-top: 0.25rem;
+    margin-bottom: 1rem;
+}
+
+#fmessage{
+    height: 12rem;
+}
+
+#fmessage::placeholder{
+    transform: translateY(-5.25rem);
 }
