@@ -10,15 +10,7 @@
     const speed = 50;
 
   //Slideshow
-    const prevButton = document.getElementsByClassName("prev");
-    const nextButton = document.getElementsByClassName("next");
-    let slideIndex = [1, 1, 1];
-    let slideID = ["slide-maritime", "slide-animal", "slide-warriors"];
 
-    //Initialstatus der Arrays
-      showSlide(1, 0);
-      showSlide(1, 1);
-      showSlide(1, 2);
 
 //Event Listener
   //Typewriter
@@ -28,16 +20,30 @@
 
     //Navigation
     hamburgerToggle.addEventListener("click", openNav);
-    closeToggle.addEventListener("click", closeNav)
+    closeToggle.addEventListener("click", closeNav);
 
   //Slideshow
-    prevButton.addEventListener("click", function() {
-      plusSlides(-1);
-    })
-    nextButton.addEventListener("click", function() {
-      plusSlides(1);
-    })
-
+  document.addEventListener("DOMContentLoaded", function() {
+    const prevButtons = document.querySelectorAll(".prev");
+    const nextButtons = document.querySelectorAll(".next");
+  
+    // Add event listeners for previous buttons
+    prevButtons.forEach(function(button) {
+      button.addEventListener("click", function() {
+        const slideshowId = button.parentElement.id;
+        plusSlides(-1, slideshowId);
+      });
+    });
+  
+    // Add event listeners for next buttons
+    nextButtons.forEach(function(button) {
+      button.addEventListener("click", function() {
+        const slideshowId = button.parentElement.id;
+        plusSlides(1, slideshowId);
+      });
+    });
+  });
+  
 //Funktionen
   //Typewriter
     function typeWriter() {
@@ -58,17 +64,24 @@
     }
 
   //Slideshow
-    function plusSlides(n, no) {
-      showSlide(slideIndex[no] += n, no);
-    }
+  let slideIndex = 1;
+  
+  function plusSlides(n, slideshowId) {
+    showSlides(slideIndex += n, slideshowId);
+  };
 
-    function showSlide(n, no) {
-      let i;
-      let x = document.getElementsByClassName(slideID[no]);
-      if (n > x.length) {slideIndex[no] = 1}
-      if (n < 1) {slideIndex[no] = x.length}
-      for (i = 0; i < x.length; i++) {
-        x[i].style.display = "none";
-      }
-      x[slideIndex[no]-1].style.display = "block";
+  function showSlides(n, slideshowId) {
+    let i;
+    const slides = document.getElementById(slideshowId).getElementsByClassName("slides")[0].getElementsByTagName("img");
+  
+    if (n > slides.length) {
+      slideIndex = 1;
     }
+    if (n < 1) {
+      slideIndex = slides.length;
+    }
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    slides[slideIndex-1].style.display = "block";
+  };
