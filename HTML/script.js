@@ -49,14 +49,14 @@
 
     prevButtons.forEach(function(button) {
       button.addEventListener("click", function() {
-        const slideshowId = button.parentElement.id;
+        const slideshowId = button.parentElement.parentElement.id;
         plusSlides(-1, slideshowId);
       });
     });
 
     nextButtons.forEach(function(button) {
       button.addEventListener("click", function() {
-        const slideshowId = button.parentElement.id;
+        const slideshowId = button.parentElement.parentElement.id;
         plusSlides(1, slideshowId);
       });
     });
@@ -96,6 +96,7 @@
       const span = document.getElementsByClassName("close")[0];
 
     //Immer wenn man auf das aktuelle Bild der Slideshow klickt, öffnet sich das modale Bild
+    //Der alt Text des Modalbildes wird als Untertitel Text verwendet
       document.addEventListener("DOMContentLoaded", function() {
         const slideshows = document.querySelectorAll(".slideshow");
         slideshows.forEach(function(slideshow) {
