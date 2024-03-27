@@ -85,7 +85,7 @@
       for (i = 0; i < slides.length; i++) {
           slides[i].style.display = "none";
       }
-      slides[slideIndex-1].style.display = "block";
+      slides[slideIndex-1].style.display = "flex";
     };
 
 //SLideshow Modal
@@ -105,6 +105,7 @@
               modal.style.display = "block";
               modalImg.src = this.src;
               captionText.textContent = this.alt;
+              captionText.classList.add("image-caption"); 
             });
           });
         });
