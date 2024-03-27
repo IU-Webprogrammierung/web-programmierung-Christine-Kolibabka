@@ -93,7 +93,7 @@
       const modal = document.getElementById("myModal");
       const modalImg = document.getElementById("modalImg");
       const captionText = document.getElementById("caption");
-      const span = document.getElementsByClassName("close")[0];
+      const span = document.getElementsByClassName("close-modal")[0];
 
     //Immer wenn man auf das aktuelle Bild der Slideshow klickt, öffnet sich das modale Bild
     //Der alt Text des Modalbildes wird als Untertitel Text verwendet
