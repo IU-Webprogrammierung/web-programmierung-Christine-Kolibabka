@@ -68,7 +68,7 @@ small{
 }
 
 #logo img{
-    width: 2em;
+    width: 2rem;
 }
 
 #hamburger-toggle{
@@ -79,7 +79,7 @@ small{
 }
 
 .fa-bars{
-    font-size: 2.5em;
+    font-size: 2.5rem;
 }
 
 .fa-bars:hover{
@@ -111,9 +111,9 @@ small{
 }
 
 .fa-xmark{
-    font-size: 3em;
-    margin-top: 0.2em;
-    margin-right: 0.4em;
+    font-size: 3rem;
+    margin-top: 0.2rem;
+    margin-right: 0.4rem;
 }
 
 .fa-xmark:hover, .fa-xmark:focus{
@@ -155,7 +155,7 @@ small{
 }
 
 #newsletter{
-    margin: 1em;
+    margin: 1rem;
     align-self: flex-start;
     justify-self: flex-start;
 }
@@ -165,18 +165,18 @@ small{
 }
 
 .inputs {
-    margin-bottom: 0.75em;
+    margin-bottom: 0.75rem;
 }
 input[type=text]{
     width: 100%;
-    margin-bottom: 0.25em;
+    margin-bottom: 0.25rem;
     border-radius: 0.5rem;
     box-sizing: border-box;
     border: 1px solid #FDFDFF;
-    padding-top: 0.25em;
+    padding-top: 0.25rem;
 }
 .inputs input::placeholder{
-    padding-left: 0.4em;
+    padding-left: 0.4rem;
 }
 
 .submit-button input[type="submit"]{
@@ -185,8 +185,8 @@ input[type=text]{
     background-color: #174463;
     border-radius: 0.5rem;
     box-sizing: border-box;
-    padding-top: 0.25em;
-    padding-bottom: 0.25em;
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
     color: #FDFDFF;
 }
 
@@ -194,7 +194,7 @@ input[type=text]{
     display: flex;
     flex-direction: row;
     align-self: center;
-    margin: 1em;
+    margin: 1rem;
     justify-content: center;
 }
 
@@ -203,11 +203,11 @@ input[type=text]{
     border: none;
     color: #FDFDFF;
     cursor: pointer;
-    padding-bottom: 0.5em;
+    padding-bottom: 0.5rem;
 }
 
 .fa-facebook{
-    font-size: 2.25em;
+    font-size: 2.25rem;
 }
 
 #instagram{
@@ -218,14 +218,18 @@ input[type=text]{
 }
 
 .fa-instagram{
-    font-size: 2.25em;
+    font-size: 2.25rem;
 }
 
 .copyright{
     align-self: flex-end;
-    margin: 0.5em;
-    margin-left: 1em;
+    margin: 0.5rem;
+    margin-left: 1rem;
     width: 100%;
+}
+
+.sitemap{
+    display: none;
 }
 
 /*index.html*/
@@ -283,7 +287,7 @@ input[type=email]{
     border-radius: 0.5rem;
     box-sizing: border-box;
     border: 1px solid #FDFDFF;
-    padding-top: 0.25em;
+    padding-top: 0.25rem;
 }
 
 #contact-form input[type=submit]{
@@ -292,8 +296,8 @@ input[type=email]{
     background-color: #174463;
     border-radius: 0.5rem;
     box-sizing: border-box;
-    padding-top: 0.25em;
-    padding-bottom: 0.25em;
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
     color: #FDFDFF; 
     margin-bottom: 8rem;
 }
@@ -435,7 +439,7 @@ input[type=email]{
   }
   
  
-  @media only screen and (min-width: 768px){
+@media only screen and (min-width: 768px){
     /*Neue Basisschriftgröße, die anderen werden durch die relative Defintion automatisch angepasst*/
     html {
         font-size: 18px; 
@@ -505,4 +509,47 @@ input[type=email]{
     #desktop-nav a:nth-child(4){
         grid-column-start: 4;
     }
-  }
+
+    /*Footer Desktop*/
+    .mobile-footer{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .inputs{
+        margin-bottom: 0.25rem;
+    }
+
+    input[type="text"]{
+        margin-bottom: 0.6rem;
+    }
+
+    #socialmedia{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #facebook{
+        padding-bottom: 0.8rem;
+    }
+
+    #instagram{
+        padding-bottom: 0.8rem;
+    }
+
+    .copyright{
+        width: auto;
+    }
+
+    .sitemap{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        list-style-type: none;
+    }
+
+    .sitemap a{
+        color: #000014;
+    }
+}
