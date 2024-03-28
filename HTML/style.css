@@ -469,8 +469,9 @@ input[type=email]{
     
     #desktop-nav{
         grid-column: 2 / span 10;
-        display:grid;
-        grid-template-columns: subgrid;
+        display:flex;
+        flex-direction: row;
+        justify-content: space-around;
     }
 
     #desktop-nav a{
@@ -482,6 +483,7 @@ input[type=email]{
         text-transform: uppercase;
         text-decoration: none;
         color: #000014;
+        margin-left: 1rem;
         }
 
     #desktop-nav a:hover, #desktop-nav a:focus{
@@ -489,18 +491,18 @@ input[type=email]{
     }
 
     #desktop-nav a:nth-child(1){
-        grid-column-start: 2;
+        grid-column-start: 1;
     }
 
     #desktop-nav a:nth-child(2){
-        grid-column-start: 3;
+        grid-column-start: 2;
     }
 
     #desktop-nav a:nth-child(3){
-        grid-column-start: 4;
+        grid-column-start: 3;
     }
 
     #desktop-nav a:nth-child(4){
-        grid-column-start: 5;
+        grid-column-start: 4;
     }
   }
