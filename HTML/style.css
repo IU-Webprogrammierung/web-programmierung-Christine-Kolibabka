@@ -573,5 +573,34 @@ input[type=email]{
         position: absolute;
         bottom: 0;
     }
+
+    /*about.html*/
+    #about main{
+        grid-column: 2 / span 10;
+        grid-row-start: 4;
+        display: grid;
+        grid-template-columns: subgrid;
+        margin-top: 5rem;
+    }
+
+    #about main h3{
+        grid-column: 1 /span 10;
+        grid-row-start: 1;
+    }
+   
+    #portrait{
+        grid-column: 1 / span 5;
+        grid-row-start: 3;
+    }
     
+    .bio{
+        grid-column: 6 / span 6;
+        grid-row-start: 3;
+        align-self: start;
+    }
+
+    .bio p:nth-child(1){
+        margin-top: 0;
+    }
+
 }
