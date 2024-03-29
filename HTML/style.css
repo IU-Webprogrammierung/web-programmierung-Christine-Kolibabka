@@ -552,4 +552,26 @@ input[type=email]{
     .sitemap a{
         color: #000014;
     }
+
+    /*index.html*/
+    #index main{
+        grid-column: 2 / span 10;
+        grid-row-start: 9;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        box-sizing: border-box;
+    }
+
+    #index main h1{
+        margin-top: 3rem;
+    }
+    
+    #index footer{
+        grid-column: 2 / span 5;
+        display: inline;
+        position: absolute;
+        bottom: 0;
+    }
+    
 }
