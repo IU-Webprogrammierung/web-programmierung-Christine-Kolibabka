@@ -655,5 +655,18 @@ input[type=email]{
     #slideshow3{
         grid-column: 1 / span 10;
     }
-   
+
+    .image-wrapper{
+        width: auto;
+        height: 80vh; 
+        max-width: 100%;
+    }
+
+    .modal-content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 80vh;
+        width: auto;
+    }
 }
